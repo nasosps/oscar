@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="el">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Generator | Oscar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-glow" aria-hidden="true"></div>
+    <main class="page">
+      <section class="qr-panel">
+        <h1>QR Generator για τραπέζια</h1>
+        <p class="muted">
+          Βάλε το τελικό URL του site σου (GitHub Pages domain) και πάτησε Δημιουργία για να πάρεις QR ανά τραπέζι.
+        </p>
+        <div class="field-grid">
+          <div>
+            <label for="base-url">Base URL</label>
+            <input id="base-url" type="url" placeholder="https://your-domain.com/" />
+          </div>
+          <div>
+            <label for="start-table">Από τραπέζι</label>
+            <input id="start-table" type="number" min="1" value="1" />
+          </div>
+          <div>
+            <label for="end-table">Έως τραπέζι</label>
+            <input id="end-table" type="number" min="1" value="20" />
+          </div>
+        </div>
+        <div class="qr-actions actions">
+          <button class="btn btn-primary" id="generate-btn" type="button">Δημιουργία</button>
+          <button class="btn btn-ghost" id="print-btn" type="button">Εκτύπωση</button>
+          <a class="btn btn-ghost" href="index.html">Πίσω στο menu</a>
+        </div>
+      </section>
+
+      <section class="qr-results">
+        <h3>QR ανά τραπέζι</h3>
+        <div class="qr-grid" id="qr-grid"></div>
+      </section>
+    </main>
+    <script src="qr.js"></script>
+  </body>
+</html>
