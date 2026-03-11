@@ -4,15 +4,15 @@ N:;Oscar Coffee & Food;;;
 FN:Oscar Coffee & Food
 ORG:Oscar Coffee & Food
 item1.TEL;TYPE=WORK,VOICE:2810861650
-item1.X-ABLabel:Fixed line
+item1.X-ABLabel:Σταθερό
 item2.TEL;TYPE=CELL,VOICE:6944068248
 item2.X-ABLabel:Vodafone
 item3.TEL;TYPE=CELL,VOICE:6984984053
 item3.X-ABLabel:Cosmote
-ADR;TYPE=WORK:;;Kato Asites 700 13;Heraklion;Crete;70013;Greece
+ADR;TYPE=WORK:;;Κάτω Ασίτες 700 13;Ηράκλειο;Κρήτη;70013;Ελλάδα
 URL;TYPE=WORK:https://www.google.com/maps/place/?q=place_id:ChIJxQi7X_j9mhQRsRnJi_cXuRw
 URL;TYPE=OTHER:https://search.google.com/local/writereview?placeid=ChIJxQi7X_j9mhQRsRnJi_cXuRw
 URL;TYPE=OTHER:https://www.instagram.com/cafe_oscar_/
 URL;TYPE=OTHER:https://www.facebook.com/cafeoscar2001/
-NOTE:Hours Mon-Sun 07:00 AM-12:30 AM. Place ID: ChIJxQi7X_j9mhQRsRnJi_cXuRw.
+NOTE:Ωράριο Δευ-Κυρ 07:00 ΠΜ-12:30 ΠΜ. Place ID: ChIJxQi7X_j9mhQRsRnJi_cXuRw.
 END:VCARD
