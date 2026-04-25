@@ -10,7 +10,8 @@ item2.X-ABLabel:Vodafone
 item3.TEL;TYPE=CELL,VOICE:6984984053
 item3.X-ABLabel:Cosmote
 ADR;TYPE=WORK:;;Κάτω Ασίτες 700 13;Ηράκλειο;Κρήτη;70013;Ελλάδα
-URL;TYPE=WORK:https://www.google.com/maps/place/?q=place_id:ChIJxQi7X_j9mhQRsRnJi_cXuRw
+URL;TYPE=WORK:https://nasosps.github.io/oscar/
+URL;TYPE=OTHER:https://www.google.com/maps/place/?q=place_id:ChIJxQi7X_j9mhQRsRnJi_cXuRw
 URL;TYPE=OTHER:https://search.google.com/local/writereview?placeid=ChIJxQi7X_j9mhQRsRnJi_cXuRw
 URL;TYPE=OTHER:https://www.instagram.com/oscar.coffee.food/
 URL;TYPE=OTHER:https://www.facebook.com/cafeoscar2001/
