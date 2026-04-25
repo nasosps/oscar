@@ -16,40 +16,11 @@ if (yearEl) {
 }
 
 const menuWaitBtn = document.getElementById("menu-wait-btn");
-const menuWaitTitle = document.getElementById("menu-wait-title");
-const menuWaitSubtitle = document.getElementById("menu-wait-subtitle");
-const menuWaitPill = document.getElementById("menu-wait-pill");
 if (menuWaitBtn) {
-  let menuWaitTimer = null;
-  const defaultTitle = menuWaitTitle?.textContent || "Δες το Menu";
-  const defaultSubtitle = menuWaitSubtitle?.textContent || "Πλήρης προβολή καταλόγου";
-  const defaultPill = menuWaitPill?.textContent || "Menu";
-
   menuWaitBtn.addEventListener("click", () => {
-    if (menuWaitTitle) {
-      menuWaitTitle.textContent = "Αναμένουμε σύνδεση";
+    if (menuWaitBtn.tagName !== "A") {
+      window.location.href = "menu.html";
     }
-    if (menuWaitSubtitle) {
-      menuWaitSubtitle.textContent = "με πλατφόρμα menu.";
-    }
-    if (menuWaitPill) {
-      menuWaitPill.textContent = "Soon";
-    }
-
-    if (menuWaitTimer) {
-      clearTimeout(menuWaitTimer);
-    }
-    menuWaitTimer = setTimeout(() => {
-      if (menuWaitTitle) {
-        menuWaitTitle.textContent = defaultTitle;
-      }
-      if (menuWaitSubtitle) {
-        menuWaitSubtitle.textContent = defaultSubtitle;
-      }
-      if (menuWaitPill) {
-        menuWaitPill.textContent = defaultPill;
-      }
-    }, 3500);
   });
 }
 
