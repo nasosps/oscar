@@ -1,13 +1,22 @@
-# Oscar QR Menu Site
+# Oscar Coffee & Food Site
 
-Static site για QR στα τραπέζια με online menu από εικόνα.
+Static site για το Oscar Coffee & Food.
 
 ## Περιεχόμενα
 
-- `index.html`: Landing/menu page για τους πελάτες.
+- `index.html`: Αρχική σελίδα πελάτη με Ελληνικά/English.
+- `site-i18n.js`: Κείμενα και αλλαγή γλώσσας.
+- `app.js`: Βασική λειτουργικότητα σελίδας και σύνδεση του κουμπιού μενού με WebRest.
 - `qr.html`: Generator για QR ανά τραπέζι (`?table=1`, `?table=2`, ...).
-- `assets/menu.jpg`: Η εικόνα του menu.
 - `assets/logo.jpg`: Το logo.
+
+## Online μενού και παραγγελία
+
+Το κουμπί μενού στην αρχική σελίδα οδηγεί στο εξωτερικό WebRest link:
+
+`https://webrest.gr/qr_login.php?account=2`
+
+Δεν υπάρχει τοπικό menu/catalog μέσα στο repo.
 
 ## Deploy (GitHub Pages)
 
@@ -16,17 +25,3 @@ Static site για QR στα τραπέζια με online menu από εικόν
 3. Επίλεξε `Deploy from a branch`.
 4. Βάλε branch `main` και folder `/ (root)`.
 5. Περίμενε να δοθεί URL π.χ. `https://yourname.github.io/oscar/`.
-
-## Πώς βγάζεις QR για κάθε τραπέζι
-
-1. Άνοιξε `https://yourname.github.io/oscar/qr.html`.
-2. Στο `Base URL` βάλε το τελικό URL του site σου (χωρίς `qr.html`).
-3. Βάλε εύρος τραπεζιών (π.χ. `1` έως `20`).
-4. Πάτα `Δημιουργία`.
-5. Πάτα `Εκτύπωση` για να τα τυπώσεις.
-
-## Example links
-
-- `https://yourname.github.io/oscar/?table=1`
-- `https://yourname.github.io/oscar/?table=2`
-- `https://yourname.github.io/oscar/?table=3`

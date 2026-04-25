@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Oscar Coffee & Food | Menu</title>
+    <title>Oscar Coffee & Food | Μενού & Online Παραγγελία</title>
     <meta
       name="description"
-      content="Online menu για το Oscar Coffee & Food, Κάτω Ασίτες 700 13. Scan το QR στο τραπέζι για άμεση πρόσβαση."
+      content="Oscar Coffee & Food, Κάτω Ασίτες 700 13. Πλήρες μενού και online παραγγελία, τηλέφωνα, χάρτης και Instagram."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,14 +18,15 @@
   </head>
   <body>
     <div class="bg-glow" aria-hidden="true"></div>
+    <div class="language-switcher" data-language-switcher aria-label="Αλλαγή γλώσσας"></div>
 
     <main class="page">
       <header class="hero">
         <img src="assets/logo.jpg" alt="Oscar Coffee & Food logo" class="logo" />
         <p class="eyebrow">Cafe Oscar</p>
-        <h1>Online Menu</h1>
-        <p class="subtitle">Κάτω Ασίτες 700 13</p>
-        <p class="table-pill" id="table-pill" hidden>Τραπέζι: <strong id="table-number"></strong></p>
+        <h1 data-i18n="headline">Oscar Coffee & Food</h1>
+        <p class="subtitle" data-i18n="location">Κάτω Ασίτες 700 13</p>
+        <p class="table-pill" id="table-pill" hidden><span data-i18n="table">Τραπέζι:</span> <strong id="table-number"></strong></p>
 
         <div class="action-list">
           <a href="https://webrest.gr/qr_login.php?account=2" target="_blank" rel="noreferrer" class="btn btn-primary" id="menu-wait-btn">
@@ -35,14 +36,14 @@
                 <path d="M4 5h16v2H4zm0 6h16v2H4zm0 6h16v2H4z" />
               </svg>
               <span class="label">
-                <strong id="menu-wait-title">Δες το Menu</strong>
-                <span id="menu-wait-subtitle">Πλήρης προβολή καταλόγου</span>
+                <strong id="menu-wait-title" data-i18n="menuButtonTitle">Δες το μενού</strong>
+                <span id="menu-wait-subtitle" data-i18n="menuButtonSubtitle">Πλήρες μενού & online παραγγελία</span>
               </span>
             </span>
-            <span class="pill" id="menu-wait-pill">Menu</span>
+            <span class="pill" id="menu-wait-pill" data-i18n="menuButtonPill">Παραγγελία</span>
           </a>
 
-          <p class="section-title">Τηλέφωνα</p>
+          <p class="section-title" data-i18n="phones">Τηλέφωνα</p>
 
           <a href="tel:2810861650" class="btn btn-ghost">
             <span class="accent"></span>
@@ -51,11 +52,11 @@
                 <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
               </svg>
               <span class="label">
-                <strong>Σταθερό</strong>
+                <strong data-i18n="landline">Σταθερό</strong>
                 <span>281 086 1650</span>
               </span>
             </span>
-            <span class="pill">Κλήση</span>
+            <span class="pill" data-i18n="call">Κλήση</span>
           </a>
 
           <a href="tel:6944068248" class="btn btn-ghost">
@@ -69,7 +70,7 @@
                 <span>694 406 8248</span>
               </span>
             </span>
-            <span class="pill">Κλήση</span>
+            <span class="pill" data-i18n="call">Κλήση</span>
           </a>
 
           <a href="tel:6984984053" class="btn btn-ghost">
@@ -83,10 +84,10 @@
                 <span>698 498 4053</span>
               </span>
             </span>
-            <span class="pill">Κλήση</span>
+            <span class="pill" data-i18n="call">Κλήση</span>
           </a>
 
-          <p class="section-title">Γρήγορες Ενέργειες</p>
+          <p class="section-title" data-i18n="quickActions">Γρήγορες Ενέργειες</p>
 
           <a
             href="https://www.google.com/maps/dir/?api=1&destination=%CE%9A%CE%AC%CF%84%CF%89+%CE%91%CF%83%CE%AF%CF%84%CE%B5%CF%82+700+13&destination_place_id=ChIJxQi7X_j9mhQRsRnJi_cXuRw&travelmode=driving"
@@ -100,8 +101,8 @@
                 <path d="M12 2a7 7 0 0 0-7 7c0 5.02 7 13 7 13s7-7.98 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z" />
               </svg>
               <span class="label">
-                <strong>Μετάβαση</strong>
-                <span>Κάτω Ασίτες 700 13</span>
+                <strong data-i18n="directions">Μετάβαση</strong>
+                <span data-i18n="location">Κάτω Ασίτες 700 13</span>
               </span>
             </span>
             <span class="pill">Maps</span>
@@ -119,11 +120,11 @@
                 <path d="m12 17.27 6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
               </svg>
               <span class="label">
-                <strong>Αξιολογήστε μας</strong>
+                <strong data-i18n="reviewUs">Αξιολογήστε μας</strong>
                 <span>Google Reviews</span>
               </span>
             </span>
-            <span class="pill">Link</span>
+            <span class="pill" data-i18n="link">Link</span>
           </a>
 
           <a href="Oscar-Coffee-Food.vcf" class="btn btn-ghost" download>
@@ -133,14 +134,14 @@
                 <path d="M3 5v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2H5a2 2 0 0 0-2 2zm9 2.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6zM6 17c0-2 4-3 6-3s6 1 6 3v1H6z" />
               </svg>
               <span class="label">
-                <strong>Αποθήκευση Επαφής</strong>
-                <span>Λήψη κάρτας vCard (.vcf)</span>
+                <strong data-i18n="saveContact">Αποθήκευση Επαφής</strong>
+                <span data-i18n="vcard">Λήψη κάρτας vCard (.vcf)</span>
               </span>
             </span>
             <span class="pill">VCF</span>
           </a>
 
-          <a href="https://www.instagram.com/cafe_oscar_/" target="_blank" rel="noreferrer" class="btn btn-ghost">
+          <a href="https://www.instagram.com/oscar.coffee.food/" target="_blank" rel="noreferrer" class="btn btn-ghost">
             <span class="accent"></span>
             <span class="left">
               <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true">
@@ -148,102 +149,45 @@
               </svg>
               <span class="label">
                 <strong>Instagram</strong>
-                <span>@cafe_oscar_</span>
+                <span>@oscar.coffee.food</span>
               </span>
             </span>
-            <span class="pill">Open</span>
+            <span class="pill" data-i18n="open">Άνοιγμα</span>
           </a>
 
         </div>
       </header>
 
       <section class="info-card">
-        <h2>Πληροφορίες Καταστήματος</h2>
+        <h2 data-i18n="storeInfo">Πληροφορίες Καταστήματος</h2>
         <div class="info-grid">
           <article class="info-item">
-            <h3>Ωράριο</h3>
+            <h3 data-i18n="hours">Ωράριο</h3>
             <p class="info-main">Oscar coffee & food: 07:00 - 00:30</p>
-            <p class="info-main">Παράδοση: 08:00 - 00:00</p>
-            <p class="info-main">Κουζίνα: 07:00 - 00:00</p>
-            <p class="info-note">Ισχύει καθημερινά, Δευτέρα έως Κυριακή.</p>
+            <p class="info-main"><span data-i18n="delivery">Παράδοση</span>: 08:00 - 00:00</p>
+            <p class="info-main"><span data-i18n="kitchen">Κουζίνα</span>: 07:00 - 00:00</p>
+            <p class="info-note" data-i18n="dailyHours">Ισχύει καθημερινά, Δευτέρα έως Κυριακή.</p>
           </article>
           <article class="info-item">
-            <h3>Τηλέφωνα</h3>
-            <p class="info-main"><a href="tel:2810861650">Σταθερό: 281 086 1650</a></p>
+            <h3 data-i18n="phones">Τηλέφωνα</h3>
+            <p class="info-main"><a href="tel:2810861650"><span data-i18n="landline">Σταθερό</span>: 281 086 1650</a></p>
             <p class="info-main"><a href="tel:6944068248">Vodafone: 694 406 8248</a></p>
             <p class="info-main"><a href="tel:6984984053">Cosmote: 698 498 4053</a></p>
           </article>
           <article class="info-item">
-            <h3>Διεύθυνση</h3>
-            <p class="info-main">Κάτω Ασίτες 700 13</p>
+            <h3 data-i18n="address">Διεύθυνση</h3>
+            <p class="info-main" data-i18n="location">Κάτω Ασίτες 700 13</p>
             <p class="info-note">
               <a
                 href="https://www.google.com/maps/dir/?api=1&destination=%CE%9A%CE%AC%CF%84%CF%89+%CE%91%CF%83%CE%AF%CF%84%CE%B5%CF%82+700+13&destination_place_id=ChIJxQi7X_j9mhQRsRnJi_cXuRw&travelmode=driving"
                 target="_blank"
                 rel="noreferrer"
-                >Πήγαινε με εκεί</a
+                data-i18n="openMap">Πήγαινε με εκεί</a
               >
             </p>
-            <p class="info-note">Ενδεικτικός χρόνος μετάβασης: 1 ώ. 1 λ.</p>
+            <p class="info-note" data-i18n="travelTime">Ενδεικτικός χρόνος μετάβασης: 1 ώ. 1 λ.</p>
           </article>
         </div>
-      </section>
-
-      <section id="menu" class="menu-card" hidden>
-        <h2>Menu</h2>
-        <p class="muted">Αναζήτηση ανά προϊόν ή κατηγορία. Το menu έχει μετατραπεί σε κείμενο για πιο εύκολη χρήση από κινητό.</p>
-
-        <div class="menu-toolbar">
-          <input
-            id="menu-search"
-            class="menu-search"
-            type="search"
-            placeholder="Αναζήτηση (π.χ. καφές, γύρος, burger)"
-            aria-label="Αναζήτηση στο menu"
-          />
-          <button id="menu-clear" class="btn btn-ghost btn-inline" type="button">Καθαρισμός</button>
-        </div>
-
-        <div class="menu-chips" id="menu-chips" role="tablist" aria-label="Κατηγορίες menu"></div>
-        <div class="menu-results" id="menu-results" aria-live="polite"></div>
-
-        <div class="menu-note">
-          Οι τιμές έχουν περαστεί από OCR και μπορεί να χρειάζονται μικρές διορθώσεις.
-        </div>
-
-        <details class="menu-photos">
-          <summary>Φωτογραφίες menu (fallback)</summary>
-          <p class="muted">Πάτα δεξιά/αριστερά πάνω στο menu για αλλαγή σελίδας.</p>
-
-          <div class="menu-viewer" id="menu-viewer" data-pages='["MENU1.jpg","MENU2.jpg","MENU3.jpg"]'>
-            <button type="button" class="menu-nav menu-prev" id="menu-prev" aria-label="Προηγούμενη σελίδα">‹</button>
-
-            <div class="menu-stage" id="menu-stage">
-              <img id="menu-image" src="MENU1.jpg" alt="Menu σελίδα 1" class="menu-image" loading="lazy" />
-              <button
-                type="button"
-                class="menu-hit menu-hit-left"
-                id="menu-hit-left"
-                aria-label="Προηγούμενη σελίδα"
-              ></button>
-              <button
-                type="button"
-                class="menu-hit menu-hit-right"
-                id="menu-hit-right"
-                aria-label="Επόμενη σελίδα"
-              ></button>
-            </div>
-
-            <button type="button" class="menu-nav menu-next" id="menu-next" aria-label="Επόμενη σελίδα">›</button>
-          </div>
-
-          <div class="menu-controls">
-            <span class="menu-counter" id="menu-counter">1 / 3</span>
-            <a id="menu-open-full" href="MENU1.jpg" target="_blank" rel="noreferrer" class="btn btn-ghost btn-inline"
-              >Άνοιγμα τρέχουσας σελίδας</a
-            >
-          </div>
-        </details>
       </section>
 
     </main>
@@ -252,7 +196,7 @@
       <small>Oscar Coffee & Food • <span id="year"></span></small>
     </footer>
 
-    <script src="menu-data.js"></script>
+    <script src="site-i18n.js"></script>
     <script src="app.js"></script>
     <!-- NAEL credit -->
     <div id="nael-credit" style="margin:20px auto 12px;text-align:center;font-family:inherit;font-size:12px;line-height:1.5;font-weight:500;color:inherit;opacity:0.72;">
