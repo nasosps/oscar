@@ -105,9 +105,9 @@ body {
 }
 
 .logo {
-  width: clamp(190px, 58vw, 280px);
-  height: clamp(190px, 58vw, 280px);
-  padding: clamp(8px, 2.4vw, 14px);
+  width: min(100%, clamp(240px, 70vw, 430px));
+  height: min(100%, clamp(240px, 70vw, 430px));
+  padding: clamp(10px, 2.4vw, 18px);
   object-fit: contain;
   background: #fff;
   border-radius: 50%;
